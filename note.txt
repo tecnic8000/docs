@@ -6,12 +6,7 @@ Objective
 GAMEPLAY
 - 1 mission 45 min max
 - mission time: day/ night/ twilight/ ?special?
-- mission location: Moon, Aesteroid, Mars, Titan
-
-- Weapons
-- Minerals:
-- Upgrades:
-- Treasure Hunt:
+- mission location: Moon, Aesteroid, Mars, Titan, Portal1
 
 DIFFICULTIES: [1, 2, 3] 4, 5 (star)
 1 - easy, very sceneric
@@ -24,7 +19,7 @@ MINERIALS
 - water: essential for survival, can used as currency
 - iron/copper/silicon: $, some are needed for upgrade
 - titanium: can be traded for upgrades instantly
-- astatine: $$$, can help against radiation
+- astatine-211: $$$, can help against radiation
 - *darkMatter: doesnt interact with normal equipment
 - *quark-gluonPlasma: treasure hunt, doesnt interact, open Portals with only ultimate/rare Upgrade
 
@@ -34,13 +29,15 @@ WEAPON, EQUIPMENT, UPGRADE
 - eq_smartDrill: $200
 - eq_Scanner: $100
 - eq_bigLight: $150
-- eq_smartTires: $200
+- eq_extraOxygenTank: $100
 - eq_extraBattery: $200 //for Vehicle
+- eq_extraTire: $100
 - eq_airSupplyBalloon: $200
-- eq_Camoflauge: $300
-- eq_KineticShield: $400
-- u_armor1/2/3: +100 HP/+200HP/+250HP
-- u_suit1/2/3: 
+- u_Camoflauge: $300
+- u_KineticShield: $400
+- u_smartTires: $200
+- u_armor1/2/3: +100HP/+200/+250
+- u_vehicle1/2/3: +50kph/+25/+15 
 - u_oxygen1/2/3:
 
 VEHICLE
@@ -48,13 +45,15 @@ VEHICLE
 - upgradable
 
 
-ENVIRONMENT [Moons, Mars] Aesteroids, Titan
-- All: wind, freezing cold, radiation (daytime), low Gravity, 
+ENVIRONMENT procedural generated: [Moons, Mars] Aesteroids, Titan
+All: wind, freezing cold, radiation (daytime), low Gravity, 
 Moon: daytime is bombarded with toxic radiation, night with low visibility
 Mars: ?
+Titans: 
 Portal1: completely scifi world of mystery
 
 ENEMY / ALLY
 - e_alien1: stole minerals during mission
 - e_alien2: shoot energy, can kill Player
-- a_
+- a_skydrone: help map & scan for collectibles
+- a_robot1: help load minerals & defend
