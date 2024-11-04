@@ -1,1 +1,31 @@
+MAD EXPLORER PvE
+
+GAMEPLAY
+- 1 mission 45 min max
+- mission time: day/ night/ twilight/ ?special?
+- mission location: Moon, Aesteroid, Mars, Titan
+- Weapons
+- Minerals:
+- Upgrades:
+- Treasure Hunt:
+
+
+PLAYER
+
+WEAPON, EQUIPMENT, TACTIC
+
+VEHICLE
+- default vehicle can carry max 200KG, 120max speed, 100 healthPoint
+- upgradable
+
+
+WORLD [Moons, Mars] Aesteroids, Titan
 - every match 15 min
+- daytime is bombarded with toxic radiation
+
+DIFFICULTIES: [1, 2, 3] 4, 5 (star)
+1 - very sceneric
+2 - some fun obstacles
+3 - changelling and enjoyable
+4 - must
+SHOP POIN
