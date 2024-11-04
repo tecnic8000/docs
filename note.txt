@@ -1,31 +1,60 @@
 MAD EXPLORER PvE
 
+Objective
+- Explore/Do Mision/Survive -> Collect loot -> Upgrade
+
 GAMEPLAY
 - 1 mission 45 min max
 - mission time: day/ night/ twilight/ ?special?
 - mission location: Moon, Aesteroid, Mars, Titan
+
 - Weapons
 - Minerals:
 - Upgrades:
 - Treasure Hunt:
 
+DIFFICULTIES: [1, 2, 3] 4, 5 (star)
+1 - easy, very sceneric
+2 - medium, challenging obstacles
+3 - hard, must know your advantages to survive
+4 - pro, barely survivable
+5 - secret, ALIENS?!
 
-PLAYER
+MINERIALS
+- water: essential for survival, can used as currency
+- iron/copper/silicon: $, some are needed for upgrade
+- titanium: can be traded for upgrades instantly
+- astatine: $$$, can help against radiation
+- *darkMatter: doesnt interact with normal equipment
+- *quark-gluonPlasma: treasure hunt, doesnt interact, open Portals with only ultimate/rare Upgrade
 
-WEAPON, EQUIPMENT, TACTIC
+WEAPON, EQUIPMENT, UPGRADE
+- w_HandGun: $150
+- w_Rilfe: $300
+- eq_smartDrill: $200
+- eq_Scanner: $100
+- eq_bigLight: $150
+- eq_smartTires: $200
+- eq_extraBattery: $200 //for Vehicle
+- eq_airSupplyBalloon: $200
+- eq_Camoflauge: $300
+- eq_KineticShield: $400
+- u_armor1/2/3: +100 HP/+200HP/+250HP
+- u_suit1/2/3: 
+- u_oxygen1/2/3:
 
 VEHICLE
 - default vehicle can carry max 200KG, 120max speed, 100 healthPoint
 - upgradable
 
 
-WORLD [Moons, Mars] Aesteroids, Titan
-- every match 15 min
-- daytime is bombarded with toxic radiation
+ENVIRONMENT [Moons, Mars] Aesteroids, Titan
+- All: wind, freezing cold, radiation (daytime), low Gravity, 
+Moon: daytime is bombarded with toxic radiation, night with low visibility
+Mars: ?
+Portal1: completely scifi world of mystery
 
-DIFFICULTIES: [1, 2, 3] 4, 5 (star)
-1 - very sceneric
-2 - some fun obstacles
-3 - changelling and enjoyable
-4 - must
-SHOP POIN
+ENEMY / ALLY
+- e_alien1: stole minerals during mission
+- e_alien2: shoot energy, can kill Player
+- a_
