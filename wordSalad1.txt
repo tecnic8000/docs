@@ -1,0 +1,108 @@
+"
+export skeletal mesh to unreal
+
+BLENDER
+-properties window/scene/units/unit scale 1-->0.01
+-3d window/viewport overlays/guides scale 1-->0.01
+-first bone named to 'root'
+-parent with automatic weight, apply transform(skeleton 1st then mesh)
+
+
+-exportSetting
+    Smoothing: Normal Only --> Face  
+    limit to Selected Objects: TRUE
+    add leaf bones: FALSE
+    onle deform bones: TRUE
+    
+    ### Rig-Only
+    Bake Animation: FALSE
+    
+    NLA Strips: FALSE
+    
+UNREAL (test setting)
+    ### Rig-Only
+    Import Animation:
+    
+"
+
+21/04/2024 unreal demo keywords
+?
+?procedural materials: vertex data, curvature map, AO map, height map
+
+MACOS TERMINAL
+#display finder path
+-defaults write com.apple.finder _FXShowPosixPathInTitle -bool YES
+-killall Finder
+
+
+WORD SALAD:
+
+nekomonsta
+mechsmith
+
+What we do aint 
+what they do
+
+`nothing is ever finished
+
+
+script_[DUMB WORDS]
+
+
+
+scriptnote:
+- clone monologe 'i am one of many, many of me
+- salvage these moments cuz nice things dont happen twice
+- shall i be one of many and many of me.
+- amicus next-gen rifle
+
+plastic-eating worms
+
+corporate ladder:
+nhân viên 
+chuyên viên/ kĩ thuật viên
+trưởng nhóm
+quản lý / nhân sự / kế toán
+phó giám đốc
+CEO
+ghost operation / protocol
+joint operation
+special operation
+black operation (black ops)
+
+amicus next-gen rifle
+Light & Sound Department (LSD)
+situation awareness
+
+polymer-based military equipment
+
+sub-sonic scout drone
+
+m249 lmg + exo skeleton infantry
+
+N.I.P.P.L.E
+Nuclear Intervention, Prevention
+and protection LINEAR Embassy
+National Intelligence & Property Protection Law Enforcement 
+
+
+
+‘calibration complete’
+
+Cygnus Industry
+
+
+re-entry ionization blackout ETA 
+moon duút
+space mining
+
+MOGRAPHS
+HUD text: lock-on
+locked
+anomaly detected
+
+- AI bomber jet become self aware, son of a KIA pilot discovered his dad’s supposedly accidental fetal incident
+-a missile hits US space factory, result in new war
+cap --> limit, abundant/abundance --> prosperity, haste --> agility, Organization --> clan, war -->battle, fog --> misty
+
+
