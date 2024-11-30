@@ -2,7 +2,7 @@ MAD EXPLORER PvE
 
 Objective
 - Explore/Do Mision/Survive -> Collect loot -> Upgrade
-
+CHARACTER: Commando, Radio, Cargo
 GAMEPLAY
 - 1 mission 45 min max
 - mission time: day/ night/ twilight/ ?special?
