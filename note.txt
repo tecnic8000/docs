@@ -2,7 +2,8 @@ MAD EXPLORER PvE
 
 Objective
 - Explore/Do Mision/Survive -> Collect loot -> Upgrade
-CHARACTER: Commando(attack), Radio(defense), Cargo(support) & Rambo(secret!)
+CHARACTER: 
+Commando(attack/rifle/grenadeLauncher), Radio(defense/sniper/radarScan), Cargo(support/shotgun/unlimited supply) & Rambo(secret!/lightMachine)
 GAMEPLAY
 - 1 mission 45 min max
 - mission time: day/ night/ twilight/ ?special?
