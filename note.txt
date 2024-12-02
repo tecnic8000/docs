@@ -4,7 +4,7 @@ Objective
 - Explore/Do Mision/Survive -> Collect loot -> Upgrade
 CHARACTER: 
 Commando(attack/rifle/grenadeLauncher), Radio(defense/sniper/radarScan), Cargo(support/shotgun/unlimited supply) & Rambo(secret!/lightMachine)
-Mono, Tango, Echo, Bravo, 
+Mono, Tango, Echo, Bravo, Solo, Robo
 GAMEPLAY
 - 1 mission 45 min max
 - mission time: day/ night/ twilight/ ?special?
