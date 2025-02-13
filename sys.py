@@ -12,23 +12,25 @@ bl_info = {
 
 import bpy
 import shutil
-import os
+#import os
 import platform
-
-class HELLO_OT_ButtonOperator(bpy.types.Operator):
-    """Prints Hello World"""
-    bl_idname = "hello.button_operator"
-    bl_label = "Hello World"
-
-    def execute(self, context):
-        print("Hello, World!")
-        return {'FINISHED'}
     
 class SET_CONFIG(bpy.types.Operator):
     bl_idname = "button.setconfig"
     bl_label = "SET CONFIG"
-    # 0:mac local, 1:mac cloud, 2:win local, 3:win cloud
+
     def execute(self, context):
+        def setConfig(from1, to1):
+            try:
+                shutil.copy(from1, to1)
+                print("CLOUD CONFIG --- UPDATED")
+                bpy.context.window_manager.popup_menu(lambda self, context: self.layout.label(text='CLOUD CONFIG UPDATED'))
+            except FileNotFoundError:
+                print('FILE NOT FOUND----')
+            except PermissionError:
+                print("Permission denied. Please check your file permissions.")
+            except Exception as e:
+                print('UNKNOW ERROR OCCURED {e}')
         startup = [ 
             "/Users/minhhoangtran/Library/Application Support/Blender/4.3/config/startup.blend",
             "/Users/minhhoangtran/Library/CloudStorage/OneDrive-Personal/Desktop/config1/config_blender/",
@@ -41,41 +43,64 @@ class SET_CONFIG(bpy.types.Operator):
             r"C:\Users\djt_3\AppData\Roaming\Blender Foundation\Blender\4.3\config\userpref.blend",
             r"C:\Users\djt_3\OneDrive\Desktop\config1\config_blender",
         ]
-        try:
-            if platform.system() == "Darwin":
-                shutil.copy(startup[0], startup[1])
-                shutil.copy(userpref[0], userpref[1])
-                print("CONFIG SET FROM MAC")
-            if platform.system() == "Windows":
-                shutil.copy(startup[2], startup[3])
-                shutil.copy(userpref[2], userpref[3])
-                print("CONFIG SET FROM WIN")
-            bpy.context.window_manager.popup_menu(lambda self, context: self.layout.label(text='CLOUD CONFIG UPDATED'))
-        except FileNotFoundError:
-            print('FILE NOT FOUND----')
-        except PermissionError:
-            print("Permission denied. Please check your file permissions.")
-        except Exception as e:
-            print('UNKNOW ERROR OCCURED {e}')
-        return {"SET FINISHED"}
+        if platform.system() == "Darwin":
+            setConfig(startup[0],startup[1])
+            setConfig(userpref[0],userpref[1])
+        if platform.system() == "Windows":
+            setConfig(startup[2],startup[3])
+            setConfig(userpref[2],userpref[3])
+        return {'FINISHED'}
 
+class GET_CONFIG(bpy.types.Operator):
+    bl_idname = "button.getconfig"
+    bl_label = "GET CONFIG"
 
+    def execute(self, context):
+        def setConfig(from1, to1):
+            try:
+                shutil.copy(from1, to1)
+                print("LOCAL CONFIG --- UPDATED")
+                bpy.context.window_manager.popup_menu(lambda self, context: self.layout.label(text='CLOUD CONFIG UPDATED'))
+            except FileNotFoundError:
+                print('FILE NOT FOUND----')
+            except PermissionError:
+                print("Permission denied. Please check your file permissions.")
+            except Exception as e:
+                print('UNKNOW ERROR OCCURED {e}')
+        startup = [ 
+            "/Users/minhhoangtran/Library/CloudStorage/OneDrive-Personal/Desktop/config1/config_blender/startup.blend",
+            "/Users/minhhoangtran/Library/Application Support/Blender/4.3/config/",
+            r"C:\Users\djt_3\OneDrive\Desktop\config1\config_blender\startup.blend",
+            r"C:\Users\djt_3\AppData\Roaming\Blender Foundation\Blender\4.3\config",
+        ]
+        userpref = [
+            "/Users/minhhoangtran/Library/CloudStorage/OneDrive-Personal/Desktop/config1/config_blender/userpref.blend",
+            "/Users/minhhoangtran/Library/Application Support/Blender/4.3/config/",
+            r"C:\Users\djt_3\OneDrive\Desktop\config1\config_blender\userpref.blend",
+            r"C:\Users\djt_3\AppData\Roaming\Blender Foundation\Blender\4.3\config",
+        ]
+        if platform.system() == "Darwin":
+            setConfig(startup[0],startup[1])
+            setConfig(userpref[0],userpref[1])
+        if platform.system() == "Windows":
+            setConfig(startup[2],startup[3])
+            setConfig(userpref[2],userpref[3])
+        return {'FINISHED'}
+
+# Creates a Panel in the Sidebar ---------------------------------------------        
 class HELLO_PT_Panel(bpy.types.Panel):
-    """Creates a Panel in the Sidebar"""
-    bl_label = "Hello Panel"
+    bl_label = "--- CONFIG ---"
     bl_idname = "HELLO_PT_Panel"
     bl_space_type = 'VIEW_3D'
     bl_region_type = 'UI'
-    bl_category = "SYS"
+    bl_category = "@_8000"
 
     def draw(self, context):
         layout = self.layout
-        layout.operator("hello.button_operator", text="Hello World1")
-        layout.operator("button.setconfig",text="SET CONFIG1")
-    
+        layout.operator("button.setconfig",text="--- config_SET1")
+        layout.operator("button.getconfig",text="--- config_GET1")
         
-
-classes = [HELLO_OT_ButtonOperator, HELLO_PT_Panel]
+classes = [GET_CONFIG, SET_CONFIG, HELLO_PT_Panel]
 
 def register():
     for cls in classes:
