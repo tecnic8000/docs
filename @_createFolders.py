@@ -8,12 +8,12 @@ def create_folders(base_path, folder_structure):
 
 # Define your folder structure
 folder_structure = [
-    "project",
-    "project/assets",
-    "project/assets/textures",
-    "project/assets/models",
-    "project/scripts",
-    "project/configs"
+    "passes",
+    "passes/lighting",
+    "passes/depth",
+    "passes/mist",
+    "passes/vector",
+    "passes/diffuse"
 ]
 
 # Set the base path
