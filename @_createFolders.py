@@ -1,4 +1,5 @@
 import os
+import platform
 
 def create_folders(base_path, folder_structure):
     for folder in folder_structure:
